@@ -68,10 +68,3 @@ function TimeUpdate() {
         minutesScreen.textContent = minutes;
     }
 }
-
-setInterval(TimeUpdate, 10);
-
-const date = new Date();
-const heure = date.getHours();
-
-console.log(heure);
