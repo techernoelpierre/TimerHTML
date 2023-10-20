@@ -68,3 +68,5 @@ function TimeUpdate() {
         minutesScreen.textContent = minutes;
     }
 }
+
+setInterval(TimeUpdate, 10);
