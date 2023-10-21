@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'mainFont';
+    src: url('./Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf');
+}
+
+html{
+    overflow: hidden;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("./images/fond.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blue;
+    border: solid 4px blue;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: inset 0px 0px 26px -1px #494949;
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.screen{
+    height: 80px;
+    width: 400px;
+    margin-bottom: 75px;
+    border-radius: 20px;
+    background-color: #494949;
+    box-shadow: inset 0px 0px 26px -1px #000;
+}
+.timeStyle{
+    font-size: 50px;
+    color: #E1E1E1;
+    margin: 0;
+    font-family: mainFont;
+}
+#reset{
+    display: none;
+    border: none;
+    border-radius: 20px;
+    background: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: #E1E1E1;
+    font-family: mainFont;
+    margin: 0;
+}
+.startAndStop{
+    width: 175px;
+    height: 80px;
+    margin: 0;
+    margin-right: 75px;
+    border: none;
+    border-radius: 20px;
+    background-color: #3CFF8A;
+    color: #B1FFD0;
+    font-size: 25px;
+    font-family: mainFont;
+    box-shadow: inset 0px 0px 26px -1px #006729;
+    transition: ease 100ms;
+}
+.startAndStopOnStop{
+    background-color: #FF4949;
+    box-shadow: inset 0px 0px 26px -1px #600000;
+    color: #FFABAB;
+    transition: ease 100ms;
+}
+.btnContainer{
+    height: 80px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #494949;
+    box-shadow: inset 0px 0px 26px -1px #000;
+}
+.mainBtnContainer{
+    display: flex;
+}
+.settings{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+}
+.settings:hover{
+    animation: settingsAnimation 500ms;
+}
+
+@keyframes settingsAnimation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.settings:not(:hover){
+    animation: settingsAnimationRemove 500ms;
+}
+
+@keyframes settingsAnimationRemove {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.settingsContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    background-color: #E1E1E1;
+    border-radius: 20px;
+    display: none;
+    overflow: hidden;
+    animation: closeSettingsContainer 0.2s ease forwards;
+}
+.settingsContainerOpen {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    width: 600px;
+    height: 600px;
+    background-color: #E1E1E1;
+    border-radius: 20px;
+    overflow: hidden;
+    animation: openSettingsContainer 0.2s ease forwards;
+}
+@keyframes openSettingsContainer {
+    0% {
+        width: 45px;
+        height: 45px;
+        display: block;
+    }
+    100% {
+        width: 600px;
+        height: 600px;
+    }
+}
+@keyframes closeSettingsContainer {
+    0% {
+        width: 600px;
+        height: 600px;
+        display: block;
+    }
+    100% {
+        width: 45px;
+        height: 45px;
+    }
+}
+.settingsTitle {
+    padding: 0;
+    margin: 45px 0 0 45px;
+    font-family: mainFont;
+}
+.themeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 45px 20px 45px;
+    box-shadow: inset 0px 0px 26px -1px #000;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #494949;
+}
+.theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    margin: 0;
+    padding: 0;
+}
+.theme > * {
+    font-size: large;
+    font-family: mainFont;
+    user-select: none;
+    color: #E1E1E1;
+}

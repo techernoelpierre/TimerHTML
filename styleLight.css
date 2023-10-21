@@ -170,9 +170,29 @@ body{
 .settingsTitle {
     padding: 0;
     margin: 45px 0 0 45px;
+    font-family: mainFont;
 }
 .themeContainer{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 45px 20px 45px;
+    box-shadow: inset 0px 0px 26px -1px #000;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #494949;
+}
+.theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    margin: 0;
+    padding: 0;
+}
+.theme > * {
+    font-size: large;
+    font-family: mainFont;
+    user-select: none;
+    color: #E1E1E1;
 }

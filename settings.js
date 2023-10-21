@@ -19,7 +19,5 @@ settingsButton.addEventListener("click", () => {
         }, 200);
 
     }
-
-    console.log("ok");
 })
 
