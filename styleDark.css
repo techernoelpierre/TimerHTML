@@ -25,11 +25,11 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: blue;
-    border: solid 4px blue;
+    background-color: #494949;
+    border: solid 4px #494949;
     border-radius: 25px;
     padding: 25px;
-    box-shadow: inset 0px 0px 26px -1px #494949;
+    box-shadow: inset 0px 0px 26px -1px #000;
 }
 .time{
     display: flex;
@@ -41,12 +41,12 @@ body{
     width: 400px;
     margin-bottom: 75px;
     border-radius: 20px;
-    background-color: #494949;
-    box-shadow: inset 0px 0px 26px -1px #000;
+    background-color: #E1E1E1;
+    box-shadow: inset 0px 0px 26px -1px #494949;
 }
 .timeStyle{
     font-size: 50px;
-    color: #E1E1E1;
+    color: #000;
     margin: 0;
     font-family: mainFont;
 }
@@ -95,7 +95,7 @@ body{
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #fff;
+    color: #E1E1E1;
 }
 .settings:hover{
     animation: settingsAnimation 500ms;
@@ -127,10 +127,12 @@ body{
     right: 10px;
     width: 45px;
     height: 45px;
-    background-color: #E1E1E1;
+    background-color: #494949;
+    border: solid 4px #494949;
     border-radius: 20px;
     display: none;
     overflow: hidden;
+    box-shadow: inset 0px 0px 26px -1px #000;
     animation: closeSettingsContainer 0.2s ease forwards;
 }
 .settingsContainerOpen {
@@ -140,9 +142,11 @@ body{
     right: 10px;
     width: 600px;
     height: 600px;
-    background-color: #E1E1E1;
+    background-color: #494949;
+    border: solid 4px #494949;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: inset 0px 0px 26px -1px #000;
     animation: openSettingsContainer 0.2s ease forwards;
 }
 @keyframes openSettingsContainer {
@@ -171,16 +175,17 @@ body{
     padding: 0;
     margin: 45px 0 0 45px;
     font-family: mainFont;
+    color: #E1E1E1;
 }
 .themeContainer{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px 45px 20px 45px;
-    box-shadow: inset 0px 0px 26px -1px #000;
+    box-shadow: inset 0px 0px 26px -1px #494949;
     border-radius: 20px;
     overflow: hidden;
-    background-color: #494949;
+    background-color: #E1E1E1;
 }
 .theme{
     display: flex;
@@ -194,5 +199,5 @@ body{
     font-size: large;
     font-family: mainFont;
     user-select: none;
-    color: #E1E1E1;
+    color: #000;
 }

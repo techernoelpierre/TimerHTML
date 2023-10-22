@@ -128,9 +128,11 @@ body{
     width: 45px;
     height: 45px;
     background-color: #E1E1E1;
+    border: solid 4px #E1E1E1;
     border-radius: 20px;
     display: none;
     overflow: hidden;
+    box-shadow: inset 0px 0px 26px -1px #494949;
     animation: closeSettingsContainer 0.2s ease forwards;
 }
 .settingsContainerOpen {
@@ -141,8 +143,10 @@ body{
     width: 600px;
     height: 600px;
     background-color: #E1E1E1;
+    border: solid 4px #E1E1E1;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: inset 0px 0px 26px -1px #494949;
     animation: openSettingsContainer 0.2s ease forwards;
 }
 @keyframes openSettingsContainer {
